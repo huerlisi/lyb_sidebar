@@ -1,3 +1,28 @@
 = LybSidebar
 
-This project rocks and uses MIT-LICENSE.
+LybSidebar simplifies dries up common sidebar code.
+
+= Install
+
+In Rails 3, simply add
+
+ gem 'lyb_sidebar'
+
+to your Gemfile.
+
+= Example
+
+ class StatementController < ActionController::Base
+   sidebar
+ end
+
+ This will queue the partial 'statements/sidebar' to be rendered whenever
+ the 'prepare_sidebars' helper is called. The 'render_sidebars' will then
+ insert those queued sidebars.
+
+
+= License
+
+Copyright (c) 2011 Simon Hürlimann <simon.huerlimann@cyt.ch>
+
+Released under the MIT license.
