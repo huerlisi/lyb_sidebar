@@ -3,7 +3,7 @@ module LybSidebar
     extend ActiveSupport::Concern
     
     included do
-      cattr_accessor :sidebars
+      class_inheritable_accessor :sidebars
     end
 
     module ClassMethods

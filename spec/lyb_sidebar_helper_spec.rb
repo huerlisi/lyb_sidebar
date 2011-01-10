@@ -14,6 +14,14 @@ describe SidebarHelper do
   end
   
   describe ".prepare_sidebars" do
+    context "with Controller.sidebars = nil" do
+      it "should do nothing" do
+        subject.stub_chain(:controller, :sidebars).and_return(nil)
+        
+        subject.prepare_sidebars
+      end
+    end
+
     it "should render partials from Controller.sidebars" do
       subject.stub_chain(:controller, :sidebars).and_return(['basic/sidebar', 'simple/sidebar'])
       

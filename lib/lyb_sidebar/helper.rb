@@ -15,14 +15,21 @@ module LybSidebar
     end
 
     # Sidebar
+    def prepare_sidebars
+      return if controller.sidebars.nil?
+      
+      for partial in controller.sidebars
+        render partial
+      end
+    end
+
     def render_sidebar
       content_for :sidebar
     end
 
-    def prepare_sidebars
-      for partial in controller.sidebars
-        render partial
-      end
+    def render_sidebars
+      prepare_sidebars
+      render_sidebar
     end
   end
 end
