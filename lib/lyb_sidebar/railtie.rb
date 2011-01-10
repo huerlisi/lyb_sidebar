@@ -6,7 +6,7 @@ module LybSidebar
     initializer :after_initialize do
       ActionController::Base.helper LybSidebar::Helper
 
-      ActionController::Base.extend(LybSidebar::ClassMethods)
+      ActionController::Base.extend(LybSidebar::Controller::ClassMethods)
     end
   end
 end
