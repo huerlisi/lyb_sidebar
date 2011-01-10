@@ -18,5 +18,11 @@ module LybSidebar
     def render_sidebar
       content_for :sidebar
     end
+
+    def prepare_sidebars
+      for partial in controller.sidebars
+        render partial
+      end
+    end
   end
 end

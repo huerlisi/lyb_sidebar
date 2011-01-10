@@ -12,4 +12,15 @@ describe SidebarHelper do
       subject.render_sidebar
     end
   end
+  
+  describe ".prepare_sidebars" do
+    it "should render partials from Controller.sidebars" do
+      subject.stub_chain(:controller, :sidebars).and_return(['basic/sidebar', 'simple/sidebar'])
+      
+      subject.should_receive(:render).with('basic/sidebar')
+      subject.should_receive(:render).with('simple/sidebar')
+      
+      subject.prepare_sidebars
+    end
+  end
 end
