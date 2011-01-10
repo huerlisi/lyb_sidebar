@@ -2,8 +2,8 @@
 # project in your rails apps through git.
 Gem::Specification.new do |s|
   s.name = "lyb_sidebar"
-  s.summary = "Insert LybSidebar summary."
-  s.description = "Insert LybSidebar description."
+  s.summary = "LybSidebar drys sidebars."
+  s.description = "LybSidebar simplifies dries up common sidebar code."
   s.files = Dir["lib/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.version = "0.0.1"
 end
