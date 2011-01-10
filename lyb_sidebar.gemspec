@@ -5,5 +5,5 @@ Gem::Specification.new do |s|
   s.summary = "LybSidebar drys sidebars."
   s.description = "LybSidebar simplifies dries up common sidebar code."
   s.files = Dir["lib/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
-  s.version = "0.0.1"
+  s.version = "0.1.0"
 end
