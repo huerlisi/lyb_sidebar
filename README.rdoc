@@ -1,6 +1,6 @@
 = LybSidebar
 
-LybSidebar simplifies dries up common sidebar code.
+LybSidebar dries up common sidebar code.
 
 = Install
 
