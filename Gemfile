@@ -7,12 +7,12 @@ gemspec
 # Test
 # ====
 group :test do
-  gem "rspec", "~> 2.0"
-  gem "rspec-rails", "~> 2.0"
-  gem "capybara", "~> 0.4"
+  gem "rspec"
+  gem "rspec-rails"
+  gem "capybara"
   gem "sqlite3"
 end
 
 # Rails
 # =====
-gem 'rails', '~> 3.0.0'
+gem 'rails', '~> 3.1'
